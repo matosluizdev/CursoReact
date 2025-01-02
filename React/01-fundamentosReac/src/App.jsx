@@ -1,8 +1,8 @@
-import { Post } from "./Post"
+import { Post } from "./components/Post"
 import { Header } from "./components/Header"
+import { Sidebar } from "./components/Sidebar"
 import './global.css'
 import styles from './App.module.css'
-import { Sidebar } from "./components/Sidebar"
 
 function App() {
   return (
@@ -12,6 +12,10 @@ function App() {
           <Sidebar/>
           <main>
             <Post 
+              author="Luiz"
+              content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam ullam sequi doloremque nisi omnis quam praesentium quas dignissimos voluptates velit, fugiat enim pariatur veniam labore vero in exercitationem nam."
+            />
+             <Post 
               author="Luiz"
               content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam ullam sequi doloremque nisi omnis quam praesentium quas dignissimos voluptates velit, fugiat enim pariatur veniam labore vero in exercitationem nam."
             />
